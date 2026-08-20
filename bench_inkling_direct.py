@@ -4,7 +4,7 @@ Measures TTFT, tokens/s, and inter-token latency via streaming.
 Gentler test: shorter outputs, cooldown between requests."""
 import time, json, requests, statistics, sys
 
-BASE = "http://192.168.200.82:30000/v1"
+BASE = "http://<LARRY_HOST>:30000/v1"
 MODEL = "inkling-small"
 HEADERS = {"Content-Type": "application/json"}
 

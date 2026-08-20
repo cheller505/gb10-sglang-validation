@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Benchmark all 3 moe models directly on moe (192.168.200.135).
+"""Benchmark all 3 moe models directly on moe (<MOE_HOST>).
 Runs on moe itself, hits localhost to eliminate network."""
 import base64, json, time, statistics, os, urllib.request, urllib.error
 from PIL import Image, ImageDraw, ImageFont

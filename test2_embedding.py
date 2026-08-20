@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Test 2: Qwen3-Embedding-0.6B semantic-meaningfulness validation.
-Runs locally (numpy available), hits http://192.168.200.135:30001."""
+Runs locally (numpy available), hits http://<MOE_HOST>:30001."""
 import json, math, time, requests
 import numpy as np
 
-BASE="http://192.168.200.135:30001/v1/embeddings"
+BASE="http://<MOE_HOST>:30001/v1/embeddings"
 MODEL="qwen3-embedding-0.6b"
 
 # Two semantically similar, one unrelated (per task spec)

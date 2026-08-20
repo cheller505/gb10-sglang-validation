@@ -2,8 +2,8 @@
 """Definitive Test 3: correct think tokens (built from codepoints) + chat_template_kwargs probe."""
 import json, math, time, requests
 
-COMP="http://192.168.200.135:30002/v1/completions"
-CHAT="http://192.168.200.135:30002/v1/chat/completions"
+COMP="http://<MOE_HOST>:30002/v1/completions"
+CHAT="http://<MOE_HOST>:30002/v1/chat/completions"
 MODEL="qwen3-reranker-0.6b"
 INSTRUCT="Given a web search query, retrieve relevant passages that answer the query"
 QUERY="How do I bake sourdough bread at home?"

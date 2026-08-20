@@ -1,13 +1,13 @@
 # GB10 sglang Model Validation & OCR Pipeline
 
 Scripts for validating and benchmarking sglang-served models on DGX Spark GB10 nodes,
-wired into the Shadow LiteLLM API (`keys.shadow.ncsa.illinois.edu`).
+wired into a Shadow LiteLLM API gateway.
 
 ## Models tested
 
 | Model | Node | Port | Purpose |
 |---|---|---|---|
-| DeepSeek-OCR-2 | moe (192.168.200.135) | 30000 | Vision-specialized OCR (images → text) |
+| DeepSeek-OCR-2 | moe (GB10 node) | 30000 | Vision-specialized OCR (images → text) |
 | Qwen3-Embedding-0.6B | moe | 30001 | Text → 1024-dim vectors |
 | Qwen3-Reranker-0.6B | moe | 30002 | Relevance judgment (yes/no scoring) |
 | Inkling-Small-NVFP4 | larry+curly (2-node TP=2) | 30000 | Large reasoning/chat model (170B) |

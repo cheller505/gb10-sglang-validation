@@ -6,9 +6,9 @@ import base64, json, math, time, os, sys, pickle, glob, io
 import requests
 from PIL import Image
 
-BASE = "http://192.168.200.135:30000/v1"  # Direct to moe (bypass Shadow/LiteLLM for speed)
-EMB_BASE = "http://192.168.200.135:30001/v1"
-RERANK_BASE = "http://192.168.200.135:30002/v1"
+BASE = "http://<MOE_HOST>:30000/v1"  # Direct to moe (bypass Shadow/LiteLLM for speed)
+EMB_BASE = "http://<MOE_HOST>:30001/v1"
+RERANK_BASE = "http://<MOE_HOST>:30002/v1"
 KEY = ""
 HEADERS = {"Content-Type": "application/json"}
 PAGES_DIR = "/tmp/opencode/shakespeare/pages"

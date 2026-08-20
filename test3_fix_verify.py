@@ -4,7 +4,7 @@ Tests against the temp instance on port 30003 (with --chat-template fix).
 No special client kwargs — plain chat API, exactly as a normal client would call."""
 import json, math, time, requests
 
-BASE="http://192.168.200.135:30003/v1/chat/completions"
+BASE="http://<MOE_HOST>:30003/v1/chat/completions"
 MODEL="qwen3-reranker-test"
 INSTRUCT="Given a web search query, retrieve relevant passages that answer the query"
 QUERY="How do I bake sourdough bread at home?"
